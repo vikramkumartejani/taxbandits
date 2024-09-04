@@ -2,32 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: grey !important;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("/fonts/helveticaneue/HelveticaNeueHv.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HelveticaNeue-light";
+  src: url("/public/fonts/helvetica-neue-5/HelveticaNeueMedium.otf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.container-box {
+  width: 100%;
+  max-width: 75%;
+  margin: auto;
+}
+
+@media screen and (max-width: 1400px) {
+  .container-box {
+    max-width: 91%;
   }
+}
+
+@media screen and (max-width: 1200px) {
+  .container-box {
+    max-width: 100%;
+  }
+}
+
+.col-xl-2 {
+  flex: 0 0 auto;
+  width: 16.66666667%;
+}
+
+@media (min-width: 992px) {
+  .col-lg-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
+
+.second-container {
+  flex: 0 0 auto;
+  width: 16.66666667%;
 }
