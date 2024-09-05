@@ -60,7 +60,7 @@ const FormThirdSection = () => {
                 name="address2"
                 className="form-control rounded border border-[#45618559] w-full h-full p-[10px]"
               />
-              <div className="text-gray-500 text-xs mt-1 italic">
+              <div className="text-[#9e9e9e] text-xs mt-1 italic">
                 Eg: Suite 230
               </div>
             </div>
