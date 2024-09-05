@@ -121,11 +121,14 @@ const FormSecondSection = () => {
             <IoMdPlay className="mt-1 ms-2" />
           </div>
 
-          <div className="text-dark pl-[1.5rem] text-sm mt-2">
-            <b>Note</b> : Check the appropriate box in the line above for the
-            tax classification of the single-member owner. Do not check LLC if
-            the LLC is classified as a single-member LLC that is disregarded
-            from the owner unless the owner of the LLC is another LLC that is
+          <div
+            className="text-dark pl-[1.6rem] leading-[19px] text-[14px] mt-2"
+            style={{ wordSpacing: "-2px" }}
+          >
+            <b>Note</b>: Check the appropriate box in the line above for the tax
+            classification of the single-member owner. Do not check LLC if the
+            LLC is classified as a single-member LLC that is disregarded from
+            the owner unless the owner of the LLC is another LLC that is{" "}
             <b>Not</b> disregarded from the owner for U.S. federal tax purposes.
             Otherwise, a single-member LLC that is disregarded from the owner
             should check the appropriate box for the tax classification of its

@@ -1,7 +1,6 @@
 import Header from "./components/Header";
-import FormFirstSection from "./components/FormFirstSection";
-import FormSecondSection from "./components/FormSecondSection";
 import FormSection from "./components/FormSection";
+import SIgnHere from "./components/SIgnHere";
 
 export default function Home() {
   return (
@@ -9,6 +8,7 @@ export default function Home() {
       <div className="container-box w-full bg-white mt-12 p-[0.5rem] lg:p-[3rem] pb-4">
         <Header />
         <FormSection />
+        <SIgnHere />
       </div>
     </div>
   );
