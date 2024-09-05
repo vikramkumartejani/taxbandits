@@ -21,7 +21,7 @@ const SIgnHere = () => {
           </div>
           <div className="pl-3 w-full md:w-1/2 mr-2 xl:mr-0">
             <button
-              className="bg-[#3097f3] text-white rounded px-[16px] py-1  text-[18px] font-[500] ms-auto"
+              className="bg-[#3097f3] text-white rounded px-[16px] py-1 text-[17px] font-[500] ms-auto"
               data-bs-toggle="modal"
               data-bs-target="#newesign"
               id="esignfocus"
