@@ -3,11 +3,11 @@ import { IoMdPlay } from "react-icons/io";
 
 const SIgnHere = () => {
   return (
-    <div className="col-span-12 mt-2 font-HelveticaNeue ">
+    <div className="col-span-12 mt-2 font-helveticaLight px-[12px]">
       <div className="border-2 border-gray-800 border-l-0 border-r-0 flex items-center justify-between">
         <div className="flex items-center">
           <div
-            className="text-[18px] font-bold font-HelveticaNeue pr-[16px] w-auto leading-[19px] py-1"
+            className="text-[18px] font-bold font-helveticaLight pr-[16px] w-auto leading-[19px] py-1"
             id="scrollToBottom"
           >
             Sign
@@ -21,7 +21,7 @@ const SIgnHere = () => {
           </div>
           <div className="pl-3 w-full md:w-1/2 mr-2 xl:mr-0">
             <button
-              className="bg-[#3097f3] text-white rounded px-[16px] py-1 text-[17px] font-[500] ms-auto"
+              className="bg-[#3097f3] text-white rounded px-[16px] py-1 text-[17.1px] font-[500] ms-auto"
               data-bs-toggle="modal"
               data-bs-target="#newesign"
               id="esignfocus"
@@ -42,7 +42,7 @@ const SIgnHere = () => {
           <div className="ml-auto">
             <input
               type="text"
-              className="border-0 bg-white text-[16.1px] pl-2 text-sm"
+              className="border-0 bg-white text-[16.4px] pl-2 text-sm"
               id="floatingInput"
               placeholder="name"
               disabled

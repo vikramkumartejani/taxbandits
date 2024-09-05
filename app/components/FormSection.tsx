@@ -9,7 +9,7 @@ const FormSection = () => {
   return (
     <div>
       <div className="relative">
-        <div className="absolute left-[-110px] top-[40%] text-[16px] font-HelveticaNeue">
+        <div className="absolute left-[-113px] top-[40%] text-[16px] font-helveticaLight">
           <p className="rotate-[-90deg] w-fit text-center">
             <b>Print or type.</b>
             <br />
@@ -18,7 +18,7 @@ const FormSection = () => {
         </div>
         <div className="grid grid-cols-12 border-l border-l-black ms-[3rem]">
           <FormFirstSection />
-          <div className="col-span-12 font-HelveticaNeue font-[500]">
+          <div className="col-span-12 font-helveticaLight font-[500]">
             <div className="flex flex-col lg:flex-row">
               <FormSecondSection />
             </div>
@@ -29,7 +29,7 @@ const FormSection = () => {
         </div>
       </div>
       <div>
-        <TaxpayerIdentificationNumber/>
+        <TaxpayerIdentificationNumber />
         <Certification />
       </div>
     </div>
@@ -37,5 +37,3 @@ const FormSection = () => {
 };
 
 export default FormSection;
-
- 

@@ -18,7 +18,7 @@ const FormThirdSection = () => {
             </a>
             .
           </div>
-          <div className="flex items-center cursor-pointer">
+          <div className="flex items-center cursor-pointer mb-1">
             <input
               type="checkbox"
               name="IsForeignAddress"
@@ -37,16 +37,16 @@ const FormThirdSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="px-[12px]">
             <div className="text-sm mb-1">
-              <span className="text-red-600">*</span>Address Line 1
+              <span className="text-[#ff5252]">*</span>Address Line 1
             </div>
             <div className="mb-1">
               <input
                 type="text"
                 id="address1"
                 name="address1"
-                className="form-control rounded border border-[#45618559] w-full h-full p-[10px]"
+                className="form-control rounded border border-[#ff5252] w-full h-full p-[10px]"
               />
-              <div className="text-red-600 text-xs mt-1">
+              <div className="text-[#ff5252] font-[400] text-xs">
                 Address line 1 required
               </div>
             </div>
@@ -60,9 +60,7 @@ const FormThirdSection = () => {
                 name="address2"
                 className="form-control rounded border border-[#45618559] w-full h-full p-[10px]"
               />
-              <div className="text-[#9e9e9e] text-xs mt-1 italic">
-                Eg: Suite 230
-              </div>
+              <div className="text-[#9e9e9e] text-xs italic">Eg: Suite 230</div>
             </div>
           </div>
         </div>
@@ -72,9 +70,9 @@ const FormThirdSection = () => {
             City, state, and ZIP code
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2">
-            <div className="px-[12px]">
+            <div className="px-[12px] mb-[.5rem]">
               <div className="text-sm mb-1">
-                <span className="text-red-600">*</span>City
+                <span className="text-[#ff5252]">*</span>City
               </div>
               <div>
                 <input
@@ -83,12 +81,12 @@ const FormThirdSection = () => {
                   name="city"
                   className="form-control rounded border border-[#45618559] w-full h-full p-[10px]"
                 />
-                <div className="text-red-600 text-xs mt-1">City required</div>
+                <div className="text-[#ff5252] text-xs">City required</div>
               </div>
             </div>
-            <div className="px-[12px]">
+            <div className="px-[12px] mb-[.5rem]">
               <div className="text-sm mb-1">
-                <span className="text-red-600">*</span>State
+                <span className="text-[#ff5252]">*</span>State
               </div>
               <div>
                 <select
@@ -99,26 +97,24 @@ const FormThirdSection = () => {
                   <option value="">Select</option>
                   {/* Add state options here */}
                 </select>
-                <div className="text-red-600 text-xs mt-1">State required</div>
+                <div className="text-[#ff5252] text-xs">State required</div>
               </div>
             </div>
-            <div className="px-[12px]">
+            <div className="px-[12px] mb-[.5rem]">
               <div className="text-sm mb-1">
-                <span className="text-red-600">*</span>ZIP Code
+                <span className="text-[#ff5252]">*</span>ZIP Code
               </div>
-              <div className="mb-[4px]">
+              <div className="">
                 <input
                   type="text"
                   id="zipCode"
                   name="zipCode"
                   className="form-control rounded border border-[#45618559] w-full h-full p-[10px]"
                 />
-                <div className="text-red-600 text-xs mt-1">
-                  ZIP code required
-                </div>
+                <div className="text-[#ff5252] text-xs">ZIP code required</div>
               </div>
             </div>
-            <div className="lg:mt-4 -mt-2 lg:mb-0 mb-1 pt-3 px-[12px]">
+            <div className="lg:mt-4 -mt-2 lg:mb-0 mb-[.5rem] pt-4 px-[12px]">
               <a href="#" className="text-blue-600 underline cursor-pointer">
                 Verify address with USPS
               </a>
@@ -137,7 +133,9 @@ const FormThirdSection = () => {
               name="accountNo"
               className="form-control rounded border border-[#45618559] w-full h-full p-[10px]"
             />
-            <div className="text-red-600 text-xs mt-1 invisible">required</div>
+            <div className="text-[#ff5252] text-xs mt-1 invisible">
+              required
+            </div>
           </div>
         </div>
       </div>
@@ -154,7 +152,7 @@ const FormThirdSection = () => {
             name="businessName"
             className="form-control rounded border border-[#45618559] w-full h-full p-[10px]"
           />
-          <div className="text-red-600 text-xs mt-1 invisible">
+          <div className="text-[#ff5252] text-xs mt-1 invisible">
             businessName
           </div>
         </div>
@@ -166,7 +164,7 @@ const FormThirdSection = () => {
             name="email"
             className="form-control rounded border border-[#45618559] w-full h-full p-[10px]"
           />
-          <div className="text-red-600 text-xs mt-1 invisible">
+          <div className="text-[#ff5252] text-xs mt-1 invisible">
             Email required
           </div>
         </div>

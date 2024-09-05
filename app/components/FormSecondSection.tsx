@@ -122,7 +122,7 @@ const FormSecondSection = () => {
           </div>
 
           <div
-            className="text-dark pl-[1.6rem] leading-[19px] text-[14px] mt-2"
+            className="text-dark pl-[2.2rem] leading-[19px] text-[14px] mt-2"
             style={{ wordSpacing: "-2px" }}
           >
             <b>Note</b>: Check the appropriate box in the line above for the tax
@@ -143,7 +143,10 @@ const FormSecondSection = () => {
               id="Others"
               value="Others"
             />
-            <label className="text-dark pl-2 pr-2 text-sm" htmlFor="Others">
+            <label
+              className="text-dark pl-2 pr-2 text-sm pb-[20px]"
+              htmlFor="Others"
+            >
               Other (see instructions)
             </label>
             <IoMdPlay className="mt-1" />
@@ -154,16 +157,23 @@ const FormSecondSection = () => {
           <div className="flex">
             <span className="pr-1 font-bold">3b</span>
             <label
-              className="text-dark leading-snug cursor-pointer"
+              className="text-dark leading-[19px] cursor-pointer pe-[13px]"
               htmlFor="beneficiariesCheckbox"
             >
               If on line 3a you checked “Partnership” or “Trust/estate,” or
               checked “LLC” and entered “P” as its tax classification, and you
               are providing this form to a partnership, trust, or estate in
               which you have an ownership interest, check this box if you have
-              any foreign partners, owners, or beneficiaries.
+              any foreign partners, owners, or beneficiaries.{" "}
+              <a
+                href="https://www.irs.gov/pub/irs-pdf/iw9.pdf"
+                target="_blank"
+                className="inline-block text-blue-600 underline"
+              >
+                See instructions
+              </a>
             </label>
-            <span className="w-[20px]">
+            <span className="w-[30px]">
               <input
                 className="form-checkbox ml-2 mt-0 cursor-pointer"
                 type="checkbox"

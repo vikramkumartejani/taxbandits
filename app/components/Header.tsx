@@ -1,12 +1,15 @@
 import React from "react";
- 
+
 const Header = () => {
   return (
     <div className="flex items-center justify-between border-b-2 border-black">
       <div className="max-w-[25%] xl:max-w-[16%] w-full border-r-2 border-black">
         <h1 className="text-[16px] font-helveticaLight font-medium">
           Form
-          <span className="text-[36px] font-bold font-helvetica"> W-9</span>
+          <span className="text-[36px] font-bold font-helvetica ms-[-5px]">
+            {" "}
+            W-9
+          </span>
         </h1>
         <h4 className="text-[14px] leading-[17px] font-medium">
           (Rev. March 2024)

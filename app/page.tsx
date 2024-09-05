@@ -1,7 +1,6 @@
 import Header from "./components/Header";
 import FormSection from "./components/FormSection";
 import SIgnHere from "./components/SIgnHere";
-import SIgnHere from "./components/SIgnHere";
 
 export default function Home() {
   return (
@@ -11,7 +10,7 @@ export default function Home() {
         <FormSection />
         <SIgnHere />
       </div>
-      <div className="text-center my-[1.5rem] font-HelveticaNeue">
+      <div className="text-center mt-[1.5rem] font-helveticaLight">
         <a className="rounded text-[1.15rem] text-white bg-[#f26d21] px-4 py- w-[93.4px] h-[45.2px] flex items-center justify-center font-[500] shadow-md mx-auto">
           Done
         </a>

@@ -5,7 +5,7 @@ const FormFirstSection = () => {
   return (
     <>
       <div className="col-span-6 lg:col-span-4 px-[12px] py-[8px]">
-        <div className="text-sm mb-1 leading-none font-HelveticaNeue font-[500]">
+        <div className="text-sm mb-1 leading-none font-helveticaLight font-[500]">
           <span className="text-[#ff5252]">*</span>Type of TIN
         </div>
         <div className="relative">
@@ -57,7 +57,7 @@ const FormFirstSection = () => {
         </div>
       </div>
 
-      <div className="col-span-6 lg:col-span-4 px-[12px] py-[8px] font-HelveticaNeue font-[500]">
+      <div className="col-span-6 lg:col-span-4 px-[12px] py-[8px] font-helveticaLight font-[500]">
         <div className="text-sm mb-1 leading-none">
           <span className="text-[#ff5252]">*</span>EIN
         </div>
@@ -77,7 +77,7 @@ const FormFirstSection = () => {
         </div>
       </div>
 
-      <div className="col-span-6 lg:col-span-4 px-[12px] py-[8px] font-HelveticaNeue font-[500]">
+      <div className="col-span-6 lg:col-span-4 px-[12px] py-[8px] font-helveticaLight font-[500]">
         <div className="text-sm mb-1 leading-none">Email Address</div>
         <div className="form-floating mt-1">
           <input
@@ -90,7 +90,7 @@ const FormFirstSection = () => {
         </div>
       </div>
 
-      <div className="col-span-12 px-[12px] font-HelveticaNeue font-[500]">
+      <div className="col-span-12 px-[12px] font-helveticaLight font-[500]">
         <div className="text-sm mb-1 leading-none flex items-center">
           <span className="font-bold pe-1">1</span>
           <span className="text-[#ff5252]">*</span>
@@ -101,7 +101,7 @@ const FormFirstSection = () => {
         </div>
       </div>
 
-      <div className="col-span-12 border-b border-gray-900 px-[12px] font-HelveticaNeue font-[500]">
+      <div className="col-span-12 border-b border-gray-900 px-[12px] font-helveticaLight font-[500]">
         <div className="form-floating error">
           <input
             type="text"
@@ -116,7 +116,7 @@ const FormFirstSection = () => {
         </div>
       </div>
 
-      <div className="col-span-12 px-[12px] pt-1 border-b border-gray-900 font-HelveticaNeue font-[500]">
+      <div className="col-span-12 px-[12px] pt-1 border-b border-gray-900 font-helveticaLight font-[500]">
         <div className="relative">
           <div className="text-sm leading-none text-black mb-1">
             <span className="font-bold pe-1">2</span>
