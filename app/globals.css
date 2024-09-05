@@ -70,3 +70,65 @@ body {
   flex: 0 0 auto;
   width: 16.66666667%;
 }
+
+/* Hide the default radio button */
+.form-check-input {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(0, 0, 0, 0.54);
+  border-radius: 50%;
+  position: relative; /* Required for positioning pseudo-element */
+  appearance: none; /* Remove default styling */
+  background-color: transparent;
+}
+
+/* Create the inner dot for the radio button */
+.form-check-input::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8.6px; /* Inner dot size */
+  height: 8.6px; /* Inner dot size */
+  border-radius: 50%;
+  background-color: transparent; /* Default color */
+  transition: background-color 0.15s;
+}
+
+/* Style for the checked state */
+.form-check-input:checked::before {
+  background-color: #3097f3; /* Inner dot color */
+}
+
+/* Style for the outer circle when checked */
+.form-check-input:checked {
+  border-color: #3097f3;
+}
+
+/* checkbox */
+.form-checkbox[type="checkbox"] {
+  border-radius: 0.25em;
+}
+
+.form-checkbox {
+  width: 1em;
+  height: 1em;
+  margin-top: 0.25em;
+  vertical-align: top;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-print-color-adjust: exact;
+}
+
+.form-checkbox:checked[type="checkbox"] {
+  background-image: url("/assets/check.svg");
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
