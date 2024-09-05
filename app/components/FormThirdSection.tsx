@@ -3,8 +3,8 @@ import React from "react";
 const FormThirdSection = () => {
   return (
     <>
-      <div className="col-span-12 lg:col-span-8 border-black border-t md:border-r lg:border-b-0">
-        <div className="flex items-center px-[12px]">
+      <div className="md:w-8/12 border-black border-t md:border-r">
+        <div className="flex flex-col px-[12px]">
           <div className="text-black mb-1 pt-1 text-sm font-medium mr-3">
             <span className="font-bold pr-1">5</span>
             Address (number, street, and apt. or suite no.)
@@ -13,29 +13,28 @@ const FormThirdSection = () => {
               target="_blank"
               className="text-blue-600 underline"
             >
+              {" "}
               See Instructions
             </a>
             .
           </div>
-          <div>
-            <div className="flex items-center cursor-pointer">
-              <input
-                type="checkbox"
-                name="IsForeignAddress"
-                id="IsForeignAddress"
-                className="form-checkbox h-4 w-4"
-                value="on"
-              />
-              <label
-                htmlFor="IsForeignAddress"
-                className="ml-2 text-sm cursor-pointer"
-              >
-                Foreign Address (Outside US)?
-              </label>
-            </div>
+          <div className="flex items-center cursor-pointer">
+            <input
+              type="checkbox"
+              name="IsForeignAddress"
+              id="IsForeignAddress"
+              className="form-checkbox h-4 w-4"
+              value="on"
+            />
+            <label
+              htmlFor="IsForeignAddress"
+              className="ml-2 text-sm cursor-pointer"
+            >
+              Foreign Address (Outside US)?
+            </label>
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 px-[12px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="px-[12px]">
             <div className="text-sm mb-1">
               <span className="text-red-600">*</span>Address Line 1
@@ -45,8 +44,7 @@ const FormThirdSection = () => {
                 type="text"
                 id="address1"
                 name="address1"
-                placeholder="Address Line 1"
-                className="block w-full px-3 py-2 border border-gray-300 rounded-md"
+                className="form-control rounded border border-[#45618559] w-full h-full p-[10px]"
               />
               <div className="text-red-600 text-xs mt-1">
                 Address line 1 required
@@ -60,8 +58,7 @@ const FormThirdSection = () => {
                 type="text"
                 id="address2"
                 name="address2"
-                placeholder="Address Line 2"
-                className="block w-full px-3 py-2 border border-gray-300 bg-blue-50 rounded-md"
+                className="form-control rounded border border-[#45618559] w-full h-full p-[10px]"
               />
               <div className="text-gray-500 text-xs mt-1 italic">
                 Eg: Suite 230
@@ -84,8 +81,7 @@ const FormThirdSection = () => {
                   type="text"
                   id="city"
                   name="city"
-                  placeholder="City"
-                  className="block w-full px-3 py-2 border border-gray-300 rounded-md"
+                  className="form-control rounded border border-[#45618559] w-full h-full p-[10px]"
                 />
                 <div className="text-red-600 text-xs mt-1">City required</div>
               </div>
@@ -98,7 +94,7 @@ const FormThirdSection = () => {
                 <select
                   id="stateCode"
                   name="stateCode"
-                  className="block w-full px-3 py-2 border border-gray-300 rounded-md"
+                  className="form-control rounded border border-[#45618559] w-full h-full p-[10px]"
                 >
                   <option value="">Select</option>
                   {/* Add state options here */}
@@ -115,15 +111,14 @@ const FormThirdSection = () => {
                   type="text"
                   id="zipCode"
                   name="zipCode"
-                  placeholder="ZIP Code"
-                  className="block w-full px-3 py-2 border border-gray-300 rounded-md"
+                  className="form-control rounded border border-[#45618559] w-full h-full p-[10px]"
                 />
                 <div className="text-red-600 text-xs mt-1">
                   ZIP code required
                 </div>
               </div>
             </div>
-            <div className="mt-4 pt-3 px-[12px]">
+            <div className="lg:mt-4 -mt-2 lg:mb-0 mb-1 pt-3 px-[12px]">
               <a href="#" className="text-blue-600 underline cursor-pointer">
                 Verify address with USPS
               </a>
@@ -140,15 +135,14 @@ const FormThirdSection = () => {
               type="text"
               id="accountNo"
               name="accountNo"
-              placeholder="Account Number"
-              className="block w-full px-3 py-2 border border-gray-300 bg-blue-50 rounded-md"
+              className="form-control rounded border border-[#45618559] w-full h-full p-[10px]"
             />
             <div className="text-red-600 text-xs mt-1 invisible">required</div>
           </div>
         </div>
       </div>
 
-      <div className="col-span-12 lg:col-span-4 border-t border-black px-[12px]">
+      <div className="md:w-4/12 border-t border-black px-[12px]">
         <div className="text-black mb-1 text-sm font-medium pt-1">
           Requester’s name and address (optional)
         </div>
@@ -158,8 +152,7 @@ const FormThirdSection = () => {
             type="text"
             id="reqBusinessName"
             name="businessName"
-            placeholder="Requester Name"
-            className="block w-full px-3 py-2 border border-gray-300 bg-blue-50 rounded-md"
+            className="form-control rounded border border-[#45618559] w-full h-full p-[10px]"
           />
           <div className="text-red-600 text-xs mt-1 invisible">
             businessName
@@ -171,8 +164,7 @@ const FormThirdSection = () => {
             type="text"
             id="email"
             name="email"
-            placeholder="Requester Email"
-            className="block w-full px-3 py-2 border border-gray-300 bg-blue-50 rounded-md"
+            className="form-control rounded border border-[#45618559] w-full h-full p-[10px]"
           />
           <div className="text-red-600 text-xs mt-1 invisible">
             Email required
@@ -183,8 +175,7 @@ const FormThirdSection = () => {
           <textarea
             id="requesterAddress"
             name="requesterAddress"
-            placeholder="Leave a comment here"
-            className="block w-full p-2 border border-gray-300 bg-blue-50 rounded-md h-32 resize-none"
+            className="form-control rounded border border-[#45618559] w-full h-[130px] p-[10px]"
           ></textarea>
           <div className="text-gray-500 text-xs mt-1 invisible">
             EIN required

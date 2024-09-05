@@ -11,7 +11,7 @@ const FormSection = () => {
         <div className="flex flex-col lg:flex-row">
           <FormSecondSection />
         </div>
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col md:flex-row">
           <FormThirdSection />
         </div>
       </div>

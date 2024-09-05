@@ -66,7 +66,7 @@ const FormFirstSection = () => {
             <input
               type="text"
               autoComplete="nope"
-              className="form-control rounded border border-[#45618559] w-full h-full p-[10px]"
+              className="form-control rounded border border-[#ff5252] w-full h-full p-[10px]"
               name="EIN"
               id="EIN"
             />

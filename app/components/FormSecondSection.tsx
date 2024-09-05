@@ -255,7 +255,7 @@ const FormSecondSection = () => {
           Enter Exemption from FATCA reporting code
         </div>
 
-        <div className="text-xs italic">
+        <div className="text-xs italic pb-1">
           (Applies to accounts maintained outside the U.S.)
         </div>
       </div>
